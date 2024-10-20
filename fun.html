@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="btn">click here</button> 
+   <button id="reload">reload</button>
+
+   <script>
+     var red=document.getElementById("btn");
+     red.addEventListener("click",function()
+    {
+        // location.href="https://google.com";
+    // window.location="https://google.com";
+    location.replace("https://www.google.com")
+    });
+    var relod=document.getElementById("reload");
+    relod.addEventListener("click",function()
+{
+    location.reload();
+});
+
+   </script>
+</body>
+</html>

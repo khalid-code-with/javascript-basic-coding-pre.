@@ -1,0 +1,17 @@
+{
+  "name":"khalid khan",
+  "age":21,
+  "is_student":true,
+  "passport_no":null,
+  "p_language":["c","c++","javascript","css","html"],
+   "address":{
+    "city":"jaipur",
+    "state":"rajasthan",
+    "pincode":123232
+   },
+    "people":{
+         "name":"people",
+         "village":"jotri"
+    }
+}
+

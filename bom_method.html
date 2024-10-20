@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+
+</style>
+
+<body id="body">
+    <button id="btn">google</button>
+    <button id="btn1">yahoo</button>
+    <button id="btn2">close</button>
+    <!-- ======================================== -->
+     <!-- setintervel function for button -->
+      <button id="btn_set">setintervel</button>
+      <!-- ================================================ -->
+       <!-- how to go directly google than other item redirect -->
+        <button id="redirect">goto click</button>
+       <!-- ============================================================= -->
+        <h1>what is screen object=>conatin the information about user screen </h1>
+        <!-- ================================================================================ -->
+         <!-- ============================================================================================ -->
+   <script>
+    // let a=3;
+    // console.log(a);
+    //  window.alert("ok");
+    //  how to findout height and width of display area using window
+    
+    // console.log(window.innerWidth);
+    // console.log(window.innerHeight);
+    // // outerHeight property return the height of browser window include fuull interface like scroll bar toolbar 
+    //    console.log(window.outerHeight);
+    //    console.log(window.outerWidth);
+//  =====================================================================  
+// how to open new window in your tab browser
+  
+  //    let url="https://google.com";
+  //    let features="height=500,width=500,color=red";
+  //  let cl;
+// var btn=document.getElementById("btn");
+// var btn1=document.getElementById("btn1");
+// var clo=document.getElementById("btn2");
+// btn.addEventListener("click",function()
+// { 
+//    cl=window.open(url,'google',features);
+// //   btn.style.background="gold"; 
+// });
+// btn1.addEventListener("click",function()
+// {
+//     window.open("https://www.yahoo.com",'google');
+// });
+
+// btn2.addEventListener("click",function()
+// { 
+//   cl.close();
+// });
+// =========================================  
+// what is setTimeout function in javascript
+//  var cleartime=setTimeout(myfunction,500);
+// function myfunction()
+// {
+//     document.write("delay to late");
+// }if(clearTimeout(cleartime))
+// {
+//   document.write("create your account");
+// }
+// else{
+//     document.write("user already login");
+// }
+// ======================================================
+// set intervel fuction in javascript
+//  var stop=setInterval(fun,5000);
+// function fun()
+// {
+//  document.write("please subscribe");
+// };
+// var set=document.getElementById("btn_set");
+// set.addEventListener("blick",function()
+// {
+//   clearInterval(set);
+// })
+//  var stop=setInterval(fun,200);
+// function fun()
+// {
+//     console.log("please subscribe....");
+// };
+//  var btn_stop_execution=document.getElementById("btn_set");
+//  btn_stop_execution.addEventListener("click",function()
+// {
+//      clearInterval(stop);
+// });
+// ==================================================================
+// what is location object=>conatint the information about current url bar
+// console.log(location.pathname);
+// console.log(location.href);
+// console.log(location.hostname);
+// how to redirect directly on function moveout on function
+var red=document.getElementById("redirect");
+  red.addEventListener("click",function()
+{
+    // window.location="https://facebook.com";
+    // location.href="https://google.com";
+    // location.assign("https://google.com");
+// location.replace("https://www.google.com")
+});
+//  =================================================================
+// navigator object=>it is basically used collect the browser information and as well as check browser capabilities
+// console.log(navigator.appName);
+// console.log(navigator.appVersion);
+// console.log(navigator.appCodeName);
+// console.log(navigator.cookieEnabled);
+// console.log(navigator.userAgent);
+// console.log(navigator.platform);
+// console.log(navigator.javaEnabled());
+// =====================================================================
+// screen object =>contaion the information about user
+console.log(screen.width);
+console.log(screen.height);
+console.log(screen.colorDepth);
+console.log(screen.orientation);
+ 
+// =============================================================================
+   </script> 
+</body>
+</html>

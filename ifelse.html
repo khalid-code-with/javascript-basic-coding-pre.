@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <body>
+      <!-- <button id="btn"onclick="changed()">click here</button> -->
+   </body>
+   <script>
+
+      //       var btn=document.getElementById("btn");
+
+      //       function changed()
+      //       {
+      //          console.log("click here");
+      //       };
+      //       //  here start addEventListener
+      //       btn.addEventListener("click",function()
+      //    {
+      //       console.log("only click here");
+      //    });
+
+      //    // btnaddeventlistenrt mouseover
+      //    btn.addEventListener("mouseover",function()
+      // {
+      //    console.log("mous over was activated");
+      // })
+      // // btnaddeventlistener
+      // btn.addEventListener("mouseout",function()
+      // {
+      //    cons;ole.log("mouse out was clicked");
+      // })
+
+      //       //=============================================
+      //       // let hindi=Number(prompt("enter hindi marks"));
+      //       // let math=Number(prompt("enter english marks"));
+      //       // let english=Number(prompt("enter math marks"));
+      //       // let total=300;
+      //       // let sum=(hindi+math+english)
+      //       // let per=sum/total*100;
+      //       // let x=per>33?"pass":"fall"
+      //       // console.log(x);
+      //       // ========================================
+      //       //   var b=2;
+      //       //     var odd=prompt("enter the number");
+      //       //     if(odd%b==0)
+      //       //    {
+      //       //     document.write("event number");
+      //       //    }
+      //       //    else{
+      //       //     document.write("odd number");
+      //       //    }
+
+      //       // ==============================================
+      //       // let age=parseInt(prompt("enter you age"));
+      //       // var license=prompt("what you have licence");
+      //       // document.write((age>=18&&license=="yes")?"yes you can drive":"you cannot drive");
+
+
+      //       // ===============================================
+      //       //   how to find out grade of student 
+      //       function printg(mark) {
+      //          let grade;
+      //          switch (true) {
+      //             case mark >= 90:
+      //                grade = 'A';
+      //                break;
+      //             case mark >= 80:
+      //                grade = 'B';
+      //                break;
+      //             case mark >= 80:
+      //                grade = 'C';
+      //                break;
+      //             case mark >= 70:
+      //                grade = 'D';
+      //                break;
+      //             case mark >= 50:
+      //                grade = 'E';
+      //                break;
+      //             default:
+      //                grede = 'F failed';
+      //          }
+      //          console.log(`mark: ${mark} Grade ${grade}`);
+      //       }
+      //       printg(95);
+      //       // ===================================
+      //       function calculator(operation, num1, num2) {
+      //          let result;
+
+      //          switch (operation) {
+      //             case 'add':
+      //                result = num1 + num2;
+      //                break;
+      //             case 'subtract':
+      //                result = num1 - num2;
+      //                break;
+      //             case 'multiply':
+      //                result = num1 * num2;
+      //                break;
+      //             case 'divide':
+      //                if (num2 !== 0) {
+      //                   result = num1 / num2;
+      //                } else {
+      //                   result = "Cannot divide by zero";
+      //                }
+      //                break;
+      //             default:
+      //                result = "Invalid operation";
+      //          }
+
+      //          return result;
+      //       }
+
+      //       // Example usage:
+      //       console.log(calculator('add', 5, 3));
+      //       console.log(calculator('multiply', 10, 3));
+
+      //       // ======================================
+
+
+      //       // nested if block inside another if block
+
+      //       //   var a=5,b=6,c=7;
+      //       //   if(a<b)
+      //       //   {
+      //       //    if(b>c)
+      //       //   {
+      //       //    console.log("b is smaller");
+      //       //   }
+      //       //   else{
+      //       //    console.log("b is not greate c")
+      //       //   }
+      //       //   if(c<b)
+      //       //   {
+      //       //    console.log("c is greater compared to b")
+      //       //   }
+      //       //   else{
+      //       //    console.log("c is not greater to b ")
+      //       //   }
+      //       //   }
+      //       //   else{
+      //       //    console.log("a is not greater than  b");
+      //       //   }
+
+      //    // ==========================================
+      //    // looping statement in javascript
+
+      //    //    function fun(num)
+      //    //    {
+      //    //    for(i=1;i<=10;i++)
+      //    //  {
+      //    //      document.write(`5*${i}=${num*i}<br>`);
+      //    //  }
+      //    //  for(i=1;i<=10;i++)
+      //    //  {
+      //    //      document.write(`5*${i}=${num*i}<br>`);
+      //    //  }
+      //    // }
+      //    //  fun(5);
+      //    //  fun(6);
+      // //    function fun(num) {
+      // //     for(let i = 1; i <= 10; i++) {
+      // //         document.write(`5*${i}=${num * i}<br>`);
+      // //     }
+      // // }
+      // // fun(5);
+      // // fun(6);
+      // // ===================================
+
+      //       var temp=25;
+      //       var rain="yes";
+      //   if(temp>=25)
+      //   {
+      //    console.log("50 persent possibility of rain");
+
+      //   if(rain=="yes")
+      //   {
+      //    console.log("yes rain coming");
+      //   }
+      //   else{
+      //    console.log("rain not comoin");
+      //   }
+      // }
+      // else{
+      //    console.log("not possibility of rain");
+      // }
+
+      // var b=prompt("enter your name");
+      // var password=prompt("enter your password<br>");
+      // if(b=="khalid")
+      // {
+      //    document.write("user name is right<br>");
+      //    if(password=="@1234")
+      // {
+      //    document.write("password is right");
+      // }
+      // else{
+      //    document.write("passoword incorrect<br>");
+      // }
+      // }
+      // else{
+      //    document.write("user name is incorrect<br>");
+      // }
+      // findout the income of usign if else stetement in detail
+      // var income = 75000;
+      // var age = 30;
+      // var loc = "rural";
+      // var dependence = 2;
+      // if (income > 1000) {
+      //    if (age > 35) {
+      //       if (loc === "urban") {
+      //          document.write("high income mature age urban area")
+      //       }
+      //       else if (loc === "rural") {
+      //          document.write("high income mature age rural area");
+      //       }
+      //       else {
+      //          document.write("high income mature age unknown area")
+      //       }
+      //    }
+      //    else if (age <= 35) {
+      //       if (loc === "urban") {
+      //          document.write("high income yound age urban area");
+      //       }
+      //       else if (loc === "rural") {
+      //          document.write("high income young age rural area");
+      //       }
+      //       else {
+      //          document.write("high income young age unknown area");
+      //       }
+      //    }
+      // }
+      // else {
+      //    document.write("income is not good");
+      // }
+
+
+
+      // =========================================
+      //  =======================================================
+
+      document.write("<br>");
+      // ================================================
+      // how to print grade in jaivascript
+      // var g=30;
+      // if(g>=80 &&g<=81) 
+      // {
+      //    document.write("A Grade");
+      // }
+      // else if(g>=70 &&g<=72)
+      // {
+      //    document.write("B grade");
+      // }
+      // else if(g>=60 &&g<=65)
+      // {
+      //    document.write("C Grade");
+      // }
+      // else if(g>=50&&g<=55)
+      // {
+      //    document.write("D grade");
+      // }
+      // else if(g>=40 && g<=45)
+      // {
+      //    document.write("F grade");
+      // }
+      // else{
+      //    document.write("now you are fail");
+      // }
+
+      // findout uraban area condition
+      // var income = 750000;
+      // age = 35;
+      // loc = "urban";
+      // dependence = 2;
+      // if (income > 10000) {
+      //    if (age >=35) {
+      //       if (loc === "urban") {
+      //          document.write("high income mature age urban area");
+      //       }
+      //       else if (loc === "rural") {
+      //          document.write("high income mature age rural area");
+      //       }
+      //       else {
+      //          document.write("high income maturea age unknown area");
+      //       }
+      //    }
+      //    else if (age <= 35) {
+      //       if (loc === "urban") {
+      //          document.write("high income young age urban area")
+      //       } 
+      //       else if (loc === "rural") {
+      //          document.write("high income young age rural area")
+      //       }
+      //       else {
+      //          document.write("high income young age unknown area");
+      //       }
+      //    }
+      // }
+
+      // a=5; 
+      // b=6;
+      // c=7;
+      // if(a>=5)
+      // {
+      //    document.write("a is right");
+      //    if(b>=5)
+      // {
+      //    document.write("b is right");
+      // }
+      // else{
+      // document.write("b is not right");
+      // }
+      // }
+      // else{
+      //    document.write("a is not right");
+      // }
+      // document.write("<br>");
+      // var a = 5;
+      // var b = 5;
+      // var ope = 1;
+      // switch (ope) {
+      //     case 1:
+      //       res = a + b;
+      //       document.write(res);
+           
+      //    case 2:
+      //       res = a - b;
+      //       document.write(res);
+           
+      //    case 3:
+      //       res = a * b;
+      //       document.write(res);
+      //    case 4:
+      //       res = a / b;
+      //       document.write(res);
+      //      break;
+      //    default:
+      //       document.write("when execute we enter wrong operation");
+      // }
+     
+   
+   
+
+function fun(num)
+{
+for(i=1;i<=10;i++)
+    {
+        document.write(`3*${i}=${num*i}<br>`);
+    }
+   }
+   fun(3);
+   document.write("<br>");
+ 
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .first{
+        width: 200px;
+        height: 200px;
+background-color: rebeccapurple;
+    }
+    .second{
+        /* width: 200px;
+        height: 400px;
+        background:var(--name);
+        display: none; */
+    }
+    p{
+        background: var(--name);
+        max-width: fit-content;
+    
+    }
+    :root{
+        --name:green;
+    }
+</style>
+<body>
+   <div class="first" id="first_div">
+     <p>khalid khan</p>
+   </div>  
+   <div class="second" id="second">
+     <img src="big_iamge.phn.jpg" alt="" srcset="" id="imgs">
+   </div>
+
+   <!-- ========================================================== -->
+    <button id="btn1">click here</button>
+    <button id="btn2">yehoo</button>
+    <button id="close">close tab</button>
+    <button id="st">stop here</button>
+    <!-- ====================================================================== -->
+     <!-- how to redirect one location to another location -->
+      <button id="redirect">goto to redirect</button>
+      <button id="load">load page</button>
+
+   <script>
+var first=document.getElementById("first_div");
+first.addEventListener("click",function(e)
+{
+    first.style.display="none";
+  var second=document.getElementById("second");
+  second.style.display="block";
+});
+var img=document.getElementById("imgs");
+img.addEventListener("click",function()
+{
+    img.style.display="none";
+});
+// how to open a new window using javascript
+var url="https://google.com";
+var features="width=500,height=500";
+ var btn=document.getElementById("btn1");
+ var win;
+ btn.addEventListener("click",function()
+{
+   win= window.open( url,'google',features);
+});
+var btn2=document.getElementById("btn2");
+     btn2.addEventListener("click",function()
+    {
+        window.open("https://www.yahoo.com",'google');
+    });
+      var cl=document.getElementById("close");
+      cl.addEventListener("click",function()
+    {
+        close(win);
+    });
+    // ==========================================
+    // what is set timeout fucntion
+    var cle=setTimeout(func,3000);
+    function func()
+    {
+        document.write("continue to print");
+    };
+    clearTimeout(cle);  // not execute this function
+    // =======================================================================
+    // how to print again to agan this number
+      var stp= setInterval(fun,2000);
+        function fun()
+        {
+            console.log("please subscribe..........");
+        };
+        var st=document.getElementById("st");
+        st.addEventListener("click",function()
+    {
+       clearInterval(stp);
+    });
+    // ===============================================
+    //   window object in javascript
+    console.log(location.pathname);
+    console.log(location.href);
+    console.log(location.host);
+    // how to redirect ane page to another page using javascript
+   var re=document.getElementById("redirect");
+   re.addEventListener("click",function()
+{
+//   window.location="https://google.com";
+// location.href="https://google.com";
+//    location.assign("https://www.google.com");
+//    location.replace("https://www.google.com")
+});
+var load=document.getElementById("load")
+load.addEventListener("click",function()
+{
+    location.reload();
+});
+var b=["one","two","three","four"];
+     b.forEach(function(e)
+    {
+        document.write(e+"<br>"); 
+    });
+   </script>
+</body>
+</html>

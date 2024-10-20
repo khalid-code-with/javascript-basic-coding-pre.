@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     async function funs() {
+
+         var api= await fetch("https://api.agify.io?name=meelad");
+         var getdata=await api.json();
+         console.log(getdata.count);
+         console.log(getdata.name);
+         console.log(getdata.age);
+      
+     }
+
+     funs();
+
+  </script>
+</body>
+</html> 

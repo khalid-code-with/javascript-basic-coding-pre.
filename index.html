@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //    function call()
+    //    {
+    //     var p1=document.getElementById("first").value;
+    //     var p2=document.getElementById("second").value;
+    //     var ope=document.getElementById("ope").value;
+    //     if(ope=='+')
+    //    {
+    //     var res=parseInt(p1)+ parseInt(p2);
+    //    }
+    //    if(ope=='-')
+    //    {
+    //     var res=parseInt(p1) - parseInt(p2);
+    //    }
+    //    if(ope=='*')
+    //    {
+    //     var res=parseInt(p1) * parseInt(p2);
+    //    }
+    //            if( ope=='/')
+    //            {
+    //             var res=parseInt(p1)/ parseInt(p2);
+    //            }
+    //            document.getElementById('res').value=res;
+    //    } 
+    // let x=1234;
+    // document.write(x,"<br>it is integer data type<br>");
+    //          var b=12.34;
+    //          document.write(b,"<br>it is floating data type that means Number data type");
+    //          var d="<br>welcome to \"ciitm collage<br>";
+    //          document.write(d);
+    //          var g;
+    //          document.write(g??"guest user<br>");
+    //          var  g=true;
+    //          document.write(g,"<br>")
+    //          var s=false;
+    //          document.write(s,"<br>");
+    //          var h=null;
+    //          document.write(h);
+    //          var j=123444444444444444444444444444444444444445555555555555555555555566666666666;
+    //          document.write(j);
+    // ...........................
+    //  alert("welcome to khalid khan"); //wideo practice
+    // var name=  prompt(12);
+    // document.write(name);
+    // if(name!=name)
+    // {
+    //     document.write(`your age is ${name}`);
+
+    // }
+    // else{
+    //     document.write("age is not right");
+    // }
+    // what is conform:this function take the confermation from user are you ok than not
+    //  let b=confirm("are you ok");
+    // if(b)
+    // {
+    //     document.write("fine");
+    // }
+    // else{
+    //     document.write("i am not goodi");
+    // }
+    // .................                                      // type conversion operaatee
+    // let b="4"*"yed";                                       
+    // document.write(b);
+    // document.write(typeof b);
+    // ....................
+    // type conversion
+    // let b=123; 
+    // document.write(typeof b,"<br>");
+    // let ty=Boolean(b,"<br>");
+    // document.write( typeof ty);
+    //  string manipulation
+    // let b="my name is khalid khan";
+    // let c=8;
+    // document.write(`what is your name<br>${b}`);
+    // var space="where are you from kels";
+    // console.log(space.length);
+    // var b="khalid";
+    // var f="khan";
+    // document.write(b+" alijan"+f);
+    //   comeration ot two string
+    // var b="khalid khan";
+    // if("khalid khan"==b)
+    // {
+    //     document.write("equal");
+    // }
+    // else{
+    //     document.write("not equal");
+    // }
+    // var b="jaascript is client side language";
+    // var substring=b.substr(8,19)// document.write(substring);
+    // var b=123;
+    // document.write(typeof b);
+    // let c=Boolean(typeof b)
+    // document.write(typeof c);
+    // concatin of two string
+    // let a="my name is khalid kahn";
+    // let sub=a.substring(8,18);
+    // document.write(sub);
+    //   indexOf function used to findout the position of character
+    // var b="                    in this we find the position of character   <br>";
+    // document.write(b);
+    // let trimd=b.replace("character","letter"); 
+    // document.write(trimd);
+    // let b="chek the character available or not";
+    // let incluede=b.includes("chek");
+    // document.write(incluede);
+    // array=>array is a variable that can store the multiple CSSMathValue
+    // in a single variable is called array
+    // let a="one";
+    // let b="one";
+    // let c="one";
+    // let d="one";
+    // document.write(c);  so remove this type of problem we used of array
+    // var book=["one","two","three","four"];
+    // s
+    // operation on array
+    // var book=["math","two","three","four elements"];
+    // //  book.splice(0,2);
+    // //  book.lengths=[]; 
+    //  let b=book.indexOf("three"); //add the element first position in array
+    // document.write(b);
+    //   how to empty array
+    //   how to chek vaiable or array
+    // let book=[1,2,3,4,5];
+    // // let book="my name is khalid  khan";
+    // document.write(Array.isArray(book)) ;   
+    // // how to conver t a string to array    
+    //             var text="my name is khalid  khan";
+    //             var sp=text.split(' my');   
+    //             document.write(sp);    
+    // multidiamentional array=>morethan two diamentional arrray is called 
+    //   let book=["math","physics","phy","php<br>",
+    //   ["math","500","php","100",
+    //   ["dsa","200"],["myname","is khalidkhan"]]];
+
+    //   document.write(book[1][1]);
+    // var b=["book","two","three"];
+    // var booklenth=b.length;
+    // for(i=0;i<booklenth;i++)
+    // {
+    // document.write(`element${i}is ${b}<br>`);
+    // }
+    // var b=["book","two","three"];
+    //   b.forEach(myfunction)
+    //   function myfunction(value)
+    //   {
+    //     document.write(value);
+    //   }
+    // var book=["physic","php","dsa","c++","c"];
+    // book.forEach(myfunction);
+    // function myfunction(value)
+    // {
+    //     document.write(value,"<br>");
+    // }
+    // var book=["one","two","three"];
+    //  book.forEach(myfunction)
+    //  function myfunction(value)
+    //  {
+    //     document.write(value);
+    //  }
+    // function how to use in javascript
+    // for(i=1;i<=10;i++)
+    // {
+    //     document.write(`5*${i}=${5*i}<br>`);
+    // }
+    //     function fun(num)
+    //     {
+    //         for(i=1;i<=10;i++)
+    // {
+    //     document.write(`${num}*${i}=${num*i}<br>`);
+    // } 
+    //     }
+
+    //     document.write("hello khalid khan<br>");
+    //     for(i=1;i<=10;i++)
+    // {
+    //     document.write(`5*${i}=${5*i}<br>`);
+    // }
+    // fun(2);
+    // fun(6);
+    // function fun( num,num2)
+    // {
+    // document.write(num+num2);
+    // }
+    // fun(2,5);
+    // function fun()
+    // {
+    //     document.write(arguments[0]);
+    // }
+    // fun(1,2);
+    // fun(3,4,9);
+    // fun(5,6);
+    // function fun()
+    // {
+    //     if(arguments.length==0)
+    // {
+    //     document.write("no passed arguments");
+    // }
+    // else{
+    //     let=sum=2;
+    //     for(let i=0;i<arguments.length;i++)
+    // {
+    // sum=sum+arguments[i];
+
+    // }
+    // document.write(sum);
+    // }
+    // }
+    // fun(2,3,4);
+    // fun(2,3,5);
+    // // what is return statement/
+    // function fun(a,b)
+    // {  
+    //     if(a>b)
+    // {
+    //     return 1;
+
+    // }
+    // else if(b>a)
+    // {
+    //     return -1;
+    // }
+    // else{
+    //     return 0;
+    // }
+    // }
+    // let c=fun(3 ,3);
+    // document.write(c);
+    // var ab="its gloabal variable";
+    //    function func()
+    //    { 
+    //     let a=10;
+    //     document.write(a);
+    //    }
+    //    function add()
+    //    {
+    //     // let a=34;          we can decleared same name but we variable can access another function
+    //     // document.write(a);   but gloabal variable we not decleared same name 
+    //    }
+
+    //    func();
+    //    add();
+    // anonymous function which function dont have name of function name assign any varailble execute onlly one way
+    //  let b=function()
+    // {
+    //     document.write("hello my name is khalid khan");
+    // };
+    // b();
+    //     setTimeout( b=function()
+    // {
+    //     document.write("hello my name is khalid khan");
+    // },3000);
+    //  (function()    // immidietly invoded function
+    // {
+    //     document.write("it is immidiediately invoked function");
+    // })( );
+    // let b=BigInt(12345666666666666666666677777777777778888888888888);
+    // document.write(BigInt);
+    // var b =0;
+    // document.write(typeof b, "<br>");
+    // let c = Boolean(typeof b, "<br>");
+    // document.write(c, "<br>");
+
+    //     let ope = 4;
+    //     var a = 3;
+    //     b = 6;
+    //     switch (ope) {
+    //         case 1:
+    //             document.write(a + b);
+    //             break;
+    //         case 2:
+    //             document.write(a - b);
+    //             break;
+    //         case 3:
+    //             document.write(a * b);
+    //             break;
+    //         case 4:
+    //             document.write(a / b,"<br>");
+    //             break;
+    //         default:
+    //             document.write("print the undifined value<br>");
+    //     }
+    // //  document.write("<br>");
+    //     // find out the greater between three number
+    //     let aa=10;
+    //     let=ab=20;  //find out greater number between three number
+    //     let ac=30;  
+    //         if(aa>ab&&aa>ac)
+    //         {
+    //             document.write(aa,"a is greater");
+    //         } 
+    //         else if(ab>aa&&ab>ac)
+    //         {
+    //             document.write(ab,"b is greater number are");
+    //         } 
+    //         else{
+    //             document.write(ac,"it is greater<br>");
+    //         }                       
+    //              var ab="123";
+    //              document.write(typeof ab,"<br>");
+    //              let c=Number(typeof ab);
+    //              document.write(c,"<br>");
+
+    // //   chek you can vote than or not 
+    // let age=10;
+    // if(age>=18){
+    // document.write("we can vote");
+    // }
+    // else if(age>=17)
+    // {
+    //     document.write("you are not eligible give the vote wait for one year");
+    // }
+    // else if(age>=15)
+    // {
+    //     document.write("you will wait three year");
+    // }
+    // else if(age>=10)
+    // {
+    //     document.write("please children you are not eligible give the vote<br>");
+    // }
+    // else{
+    //     document.write("you cannot vote");
+    // }
+    // template literal is clalee
+    // var d="sachin<br>";
+    // var f=`khalid `;
+    // document.write(f);
+    // var b;
+    // document.write(b??"guest user");
+    // // what is operater
+    // let a=2;
+    // let b=3;
+    // document.write(a**b);
+    // function greet(){
+    //     document.write("my name is khalid khan");
+    // }
+    // setTimeout(greet,3000);
+    // tenary operater
+    // var age=18;
+    //   let c=age>=18?"your age is wright":"your age is wrong";
+    //   document.write(c);
+    //  object it is instance variable of class
+    // let person={
+    //     firstname:"my name is khalid khan",
+    //     lastname:"my name is tarif khan",
+    // };
+    // person.age=25;
+    // person.firstname='firstname';
+    // person.firstname='ali';
+    // delete person.firstname;
+    // console.log('age' in person); 
+    //   
+    // }   //there are two way access the object in array first . notation and second array notation
+    // let person={
+    //     firstname:'khalid',
+    //     lastname:'khan',
+    //     sayhello(){
+    //         document.write("hello i am "+ person.firstname+"have a "+ car.brand+"car");
+    //     }
+    // };
+    // let car={
+    //  brand:"tata",
+    //     model:'safari',
+    // }
+    // person.sayhello();
+    // meth PI property
+    // document.write( Math.E);
+    //  let person={
+    //              first:'khalid khan',
+    //              second:'khanali',
+    //              greet()
+    //              {
+    //             document.write("hello i am"+ person.first+"khan have a "+ car.brand+"car");
+    //              }
+    // };
+    //  var car={
+    //     brand:"tata",
+    // }
+    // person.age='34';
+    // document.write(person.age);
+    // // method
+    // function greet()
+    // {
+    //     document.write("hello ")
+    // }
+    // person.greet();
+    // again repeat this math method
+    //    document.write(PI());
+    // let y=Math.E(1);
+    // document.write(y);
+    // var a=Math.PI(5,4,5,6,0);
+    // document.write(a);
+    // what is rendom number how to find out in javascript 
+    // let x=Math.floor(Math.random()*10)+1;
+
+    // document.write(x);
+    // function ransom( min,max)
+    // {
+    //     let x=Math.floor(Math.random()*(max-min+1))+min;
+    //     return x;
+    // }
+    // document.write(ransom(10,20));
+    //    daate object
+    // let x="12/02/2024";
+     
+    // let x=new Date( "2025 7/12:33");
+    // x.setFullYear(2020);
+    // x.setMonth(4);
+    // x.setDate(15);
+    // x.setSeconds(45);
+    // let y=x.setDate(x.getDate()+50);
+    // document.write(x,"<br>");
+    // document.write(y);
+//     let x=new Date("octomner 13,2024 11:12:33")
+//     let y=new Date();
+//    if(y>=x)
+//    {
+//     document.write("x is past date");
+//    }
+//     else if(x>y)
+//    {
+//     document.write("x is feature date");
+//    }
+//     else{
+
+//         document.write("these are same date");
+//     }
+// let person =new Object();
+// person.name="it is second method of create object",
+// person.age="45",
+   
+
+// console.log(person);
+// var person= new Object();
+// person.first='khalid'
+// person.second="khalid khan";
+// document.write("i am "+ person.first+"khan mewati aale"+ sir.myname+"bharatpur");
+
+// document.write(person);
+    
+// var sir=new Object();
+// sir.myname="khalid khan"
+// sir.lastname="mewati sir"
+// how to vreate a object in javascript main
+// var person={
+//     first:"khalid khan",
+//     second:"mewati aale",
+// }
+// person.age="32";
+// document.write(person.age);
+// let car={
+//     brand:"tata car",
+//     safari:" lemborgingi"
+// }
+// compersion operater 
+// let b=50;
+// var c="hello";
+// document.write(b!==c,"<br>");
+// let e=5;
+// let f=5;
+// document.write(e===f,"<br>");
+// document.write("manish"=="khalid<br>");
+// document.write("<br>")
+// var g=3;
+// if(g>=3)
+// {
+//     document.write("this is greater<br>");
+// }
+// else{
+//     document.write("this is not equal<br>");
+// }
+// // ternary operater
+// var age=18;
+// var c=age>=18?"you can vote":"you cannot vote<br>";
+// document.write(c);
+
+// var ages=17;
+// if(ages>=18)
+// {
+//     document.write("you can vote");
+// }
+// else if(age>17)
+// {
+//     document.write("wait for one year");
+// }
+// else{
+//     document.write("you cannot vote");
+// }
+
+// ===
+// var b=40;
+// let c=40;
+// document.write(b!==c);
+// document.write("<br>");
+// age=18;
+// if(age<=17)  
+// {
+//     document.write("you can vote");
+// }
+// else{
+//     document.write("you cannot  vote");
+// }
+//  howe to create a date and tim
+// let da=new Date("4040");
+// document.write(da.getFullYear());
+// document.write(da.getSeconds()); 
+// da.setFullYear(2022);
+// document.write(da);
+
+
+
+// da.setDate(12);
+// document.write(da);
+// hwo to create object
+// var person={
+//   first:"khalid khan",
+//   second:"i am form bharatpur",
+//   getname:function()
+//   {
+//     return this.first.toUpperCase()
+//   }
+// };
+// console.log(person.getname());
+
+// how to access property using get function
+// var person={
+//     first:"khalidn",
+//     second:"khan",
+//     get getname()
+//     {
+//         return this.first.toUpperCase()
+//     }
+// }
+// console.log(person.getname);
+// how to used set function
+// var person={
+//     first:"khalid",
+//     second:"khan",
+//     set setname(n)
+//     {
+//         this.first=n.toUpperCase()
+//     }
+// };
+// person.setname="khalid";
+// console.log(person);
+// var student={
+//     first:"khalid",
+//     lase:"khan",
+//     age:34,
+//     class:34,
+// }
+// var students={
+//     first:"khalid khan",
+//     lase:"khan ali",
+//     age:34,
+//     class:34,
+// }
+// var student1={
+//     firstname:"khanlid",
+//     lastname:"khan",
+//     age:25,
+//     class:5,
+// }
+// function Student( first,last,age,cls)
+// {
+//   this.firstname=first;
+//   this.lastname=last;
+//   this.age=age;
+//   this.class=cls;
+// }
+// var student1= new Student("khalid","khan",34,45);
+//   student1.nationality="indian";
+//   student1.name=function()
+//   {
+//     return this.firstname+" hii "+this.lastname;
+//   }
+// console.log(student1.name());
+// what is function constructer
+//  function Student(first,last,age,cls)
+//  {
+//     this.firstname=first;
+//     this.lastname=last;
+//     this.age=age;
+//     this.class=cls;
+//  };
+//  Student.prototype.nationality="india";
+//  var student1=new Student("khlaid","khan",18,5);
+//  var student2=new Student("tarif","ali",18,5);
+ 
+//  console.log(student1);
+//  console.log(student2.nationality);
+// what is nested object=>one object inside another object is called nested object
+// var user={
+//     id:123,
+//     email:"abc@gmail.com",
+//     personalinfo:{
+//         name:"khlaid",
+//         lase:"khan",
+//         address:{
+//             addresss:"duwarikapuri",
+//             coutary:"india",
+//             city:"jaipur"
+//         }
+//     }
+// };
+// console.log(user.personalinfo.address.coutary);
+// what is hoisting in javascript=>keep the all code top of the page and declearation top of the page 
+
+
+// hello();
+
+// function hello()
+// {
+//     document.write("hello word in javascript");
+// }
+// var x;
+// x=12;
+// document.write(x);
+// var x;
+// what  is strict mode->if we access anyone variable without declaration it is show the errow error it is used as "use strict" decleared
+// top of page
+// "use strict";
+// x=4;
+// document.write(x);
+// }  it is automatically putting the all code top
+
+// today we find out greter number between thre number
+// let x=true;
+// var y=true;
+// document.write(x>=y&&y>=x);
+
+
+// var a=10;
+// var b=200;
+// var c=30;
+// if(a>b&&a>c)
+// {
+//     document.write(a,"this is greter");
+// }
+// else if(b>a&& b>c)
+// {
+//     document.write(b,"this is greater");
+// }
+// else{
+//     document.write(c,"this is greate number");
+// }
+// or operater program
+// document.write("<br>");
+
+// var a=10;
+// var b=20;
+// var c=30;
+// if(a>=b||a>c)
+// {
+//     document.write(a,"this is greater");
+// }
+// else if(b>=a||b>c){
+//     document.write(b,"this is greater");
+// }
+// else{
+//     document.write(c,"this is greater");
+// }
+
+// var a=10;
+// var b=10;
+// document.write(a!=b);
+
+// var b=new Date();
+// document.write(b);
+
+//  var book=["khalid","tarif","aakil","nisar"];
+// document.write(book);
+// var a=[1,2,3];
+// console.log(typeof a);
+// var f=String(typeof a);
+// console.log( typeof f);
+// var b=new Date();
+// console.log( typeof b);
+// var c=null;
+// console.log(typeof c);
+// function greet()
+// {
+//       console.log("hii");
+// }
+// console.log(typeof greet);
+// var d=String(typeof greet) 
+// console.log( typeof d); 
+
+
+// what is bitwise operater in javascript
+
+//  let a=12;
+//  var b=5;
+//  document.write(a & b);  //output 0
+// or example
+                                                 // good example 
+                                                           //1100  //12ki binary
+//  var a=12;                                                 //1010 10 //ki binary    //output 8
+//  var b=12;
+//  document.write(a | b);   //output 14
+
+
+    // xor operater
+// var a=12;
+// var b=4;
+// document.write(a ^ b);
+
+// left shift operater
+//  var a=12;
+//  var b=3;   //output is 48
+//  document.write(a<<b);
+
+//  right shift operater
+// var a=12;
+// var b=3;  out put is 1
+// document.write(a>>b);
+// var a=5;
+// // var b=1;
+// document.write(~5);
+// a=12;
+// b=1;
+// document.write(a^b);
+// var a=12;
+// var b=2;
+// document.write(a<<b)
+
+//   var a=12;
+//   var b=2;
+//   document.write(a>>b);
+
+// if(b<c)
+// {
+//     document.write("this is equal");
+// }
+// else{
+//     document.write("this is not equal");
+// }
+    //     let x = Math.round(3.4);
+    // document.write(x);
+    // let b = Math.ceil(4.1);
+    // document.write(b);
+    // let r = Math.floor(5.9);
+    // document.write(r);
+    // var t=Math.pow(10,3);
+    // document.write(t,"<br>");
+    // var e=Math.sqrt(1009);
+    // document.write(e,"<br>== " );
+    // var min=Math.min(3,-4,45,67);
+    // document.write(min);
+
+
+    // person.sayhello=function()
+    // {
+    //     document.write("hello1");
+    // }
+
+    // function greet()
+    // {
+    //     document.write(" word");
+    // }
+    // person.greet;
+    // person.sayhello=greet();
+    // "use strict"
+//    x=23;
+//    document.write(x);
+//  x=12;
+// document.write(x);
+// let x;
+// x=12;
+// function Student(first,last,age,cls)
+// {
+//     this.firstname=first;
+//     this.lastname=last;
+//     this.age=age;
+//     this.class=cls;
+// }
+// var b=new Student("first","second",18,12);
+// var b2=new Student("khalid","khan",58,11);
+// console.log(b2);
+// Student();
+// console.log(b);
+// // how to add property outside from a object
+// Student.prototype.nationality="india";
+// let b=5;
+// b=+4;
+// document.write(b);
+
+// nested object
+//    var student={
+//     first:"khalid",
+//     last:"khan",
+//     last:"age",
+//     age:"18",
+//     personalinformation:{
+//         name:"khalid",
+//         fullname:"khalid ali",
+//         address:{
+//             city:"jaipur",
+//             district:"bharatpur",
+//         }
+//     }
+//    };
+
+//    console.log(student.national);
+//  var b={
+//     frist:"khalli",
+//  }
+//  b.national="khalid khan",
+//  console.log(b);
+
+// function Student( first,last,city,address)
+// {
+
+//     this.firstname=first;
+//     this.lastname=last;
+//     this.city=city;
+//     this.addre=address; 
+    
+// }
+// Student` ${onclick='greet();'},${greet()}`;
+// var student1=new Student("khalid","khan","jaipur","bharatpur");
+// var student2=new Student("tarif","khan","bharatpur","gopalrarh");
+// var student3=new Student("arun","khan","chandigarh","gopalrarh");
+// console.log(student2);
+// console.log(student1);
+// console.log(student3);
+// Student.prototype.nationality="india";
+
+// // using prototype we can add new property in fucntion constructer
+// function greet()
+// {
+//   var b=alert("this is constructure type of method in javascript it is shorthand way write object"); 
+//   console.log(b);
+// }
+
+// clone element in javascript
+
+</script>
+
+<!-- <input type="text" name="first" id="first">
+<select name="" id="ope">
+    <option value="+">
+        +
+    </option>
+    <option value="-">
+        -
+    </option>
+    <option value="*">
+        *
+    </option>
+    <option value="/">
+        /
+    </option>
+</select>
+<input type="text" name="second" id="second"><br>
+<br>
+<button onclick="call()">calculation</button>
+<input type="text" name="name" id="res"> -->
+</body>
+
+</html>

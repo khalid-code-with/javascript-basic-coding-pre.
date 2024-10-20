@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #mydiv{
+            width: 200px;
+            padding: 20px;
+            background-color: aqua;
+        }
+        #btn{
+            width: 200px;
+            height: 40px;
+            background-color: blueviolet;
+        }
+        body{
+            background-color: orange;
+        }
+    </style>
+<div id="mydiv">
+ <button id="btn">click me</button>
+ </div>
+</body>
+<!-- what is prevent defaultit is remove that by default condition -->
+ <a href="https://google.com" id="link"> click me</a>
+ <form action="" id="myfom">
+    <input type="text">
+    <input type="submit">
+ </form>
+<script>
+    // what is bubblindg and capturuing event
+    // ===================================================
+    //    var btn=document.getElementById("btn");
+    //    var mydiv=document.getElementById("mydiv");
+
+    //       btn.addEventListener("click",btnclick);
+    //       mydiv.addEventListener("click",mydivclick );
+    //    document.body.addEventListener("click",bodyclick)
+
+    //    function btnclick(e)
+    //    {
+    //     console.log("button was clicked....")
+    //     e.stopPropagation();
+    //    }
+    //    function mydivclick(event)
+    //    {
+    //     console.log("div was clicked....")
+    //     e.stopPropagation();
+    //    }
+    //    function bodyclick()
+    //    {
+    //     console.log("body was clicked....")
+    //    }
+    // ======================================================
+    // what is prevent default conditin in javascript =>it is prevent the bydefault condition
+       let link=document.getElementById("link");
+       link.addEventListener('click',function(e)
+    {
+        console.log("link clicked");
+        // e.preventDefault();
+        e.preventDefault();
+        console.log("clicked two way");
+    });
+    // apply on form by default
+    var form=document.getElementById("myfom");
+    form.addEventListener("submit",function(event)
+{
+    console.log("form was clicked");
+    event.preventDefault();
+});
+//     function changed()
+//     {
+//         console.log("button was clicked");
+    
+//     }
+//     var btn=document.getElementById("btn");
+
+//     btn.addEventListener("click",changed);
+//     // Anonymus funtion we can use directyl
+//     btn.addEventListener("click",function(){
+//         alert("execute anonymous function"); 
+//     })
+
+//     // mouseover even function
+//     btn.addEventListener("mouseover",function()
+// {
+//     console.log("mouse out was activated");
+// })
+// // mouseout ecent 
+//     function greet()
+//     {
+//         console.log("mouseout was activated");
+//     }
+//     btn.addEventListener("mouseout",greet);
+
+</script>
+</html>

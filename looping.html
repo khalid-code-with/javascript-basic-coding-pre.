@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     // ========================================
+    //     for(let i=1;i<=10;i++)
+    // { 
+    //     document.write(i+"<br>");
+
+    // }
+
+    // ======================================================
+    // findout even and odd number in a loop
+    // for(let i=1;i<=10;i++)
+    // { 
+    //     if(i%2===0)
+    // {
+    //     document.write(i+"<br>\n")
+    // }
+
+    // }
+    // ============================================
+
+    // let i=10;
+    // while(i>=1)
+    // {
+    //     document.write(i +"<br>");
+    // i--;
+    // }
+    
+    // ====================================
+    // var i=10;
+    // do{
+             
+    //     document.write(i+"<br>");
+    //     i--;
+    // }while(i>=1);
+    // ===================================
+//     var b=1;
+//     function fun(num)
+//     {
+
+//     while(b<=10)
+//     {
+//         document.write(`3*${b}=${num*b}<br>`);
+//         b++;
+//     }
+// } 
+
+// fun(3);
+// fun(4);
+
+// using for loop we create table in 
+
+// it is important question for loop
+// ==================================================================================
+// function fun(number)
+// {
+//     for(let i=1;i<=10;i++)
+// {
+//     var res=i*number;
+//     // document.write(res+"<br>");
+//     document.write(`${number}*${i}=${res}<br>`);
+// }
+// }
+// fun(3);
+// fun(5);
+// ==================================================================================================
+//   foreach loop in javascript  full detail
+
+// var book=["khalid","tarif","aalil"];
+// // book.forEach(function(name,indx)
+// // {
+// //     document.write(name+""+ indx+"<br>");
+// // });
+// book.forEach(function(name)
+// {
+//     document.write(name+"<br>"); 
+// });
+    
+
+
+
+
+    // what is control statement in java script
+    // for(i=0;i<=10;i++)
+    // {
+    //     // document.write(i+"<br>");
+    //     if(i==5)
+    // {
+    //     goto;
+    // }
+    // document.write(i+"<br>");
+    // }
+        // function fun(num)
+        // {
+        //     for(i=1;i<=10;i++)
+        // {
+        //     document.write(`2*${i}=${num*i}<br>`);
+        // }
+        // }
+        // fun(2);
+        // fun(3);
+
+
+
+        // practice of array in javascript
+        // document.write("array is a variable that can store the multiple value in a single variable name is called array<br>");
+        // lets start with example
+        // ============================================================================
+            // first method
+        var book=["one","two ","three","four"];
+        // document.write(book);
+        // document.write(book);
+        //  document.write(book[3]); //access the first and last value  from a array
+        //  document.write(book.length);
+         ///how to add the Element end of the Array
+        //   book.push("english"); //add element end of array
+        // // document.write(book);
+        // book.unshift("hindi");
+        // document.write(book);
+
+        // book.pop() //remove the last element from a array
+        // document.write(book);
+        // book.shift()  //it is remove the first Element from array
+        // document.write(book);
+        // book.splice(2,2); //remove the Element anyone position
+        // document.write(book);
+        // how to remove all element from a array
+        // book=["khalid"];
+        // document.write(book);
+        // book.length=[0];
+        // document.write(book);
+        // document.write(book);
+        // how to check value exist or not in a array
+        // var banaa=book.includes("ones"); //it is chek the value exist or not in array 
+        // document.write(banaa);           //how to check it is array or not
+        //    console.log(Array.isArray(book)); 
+        //    how to findout every one element position in array
+        //    var b=book.indexOf("three");
+        //    document.write(b);
+
+
+// =======================================================================
+// switch statement
+// var a=2,b=3,ope=5;
+// switch(ope)
+// {
+//     case 1:    //this is purpose of brak statement
+// document.write(a+b);
+// break;   //if we live the break statement in switch statement
+// case 2:
+//     document.write(a-b);
+//     break;
+//     default:
+//         document.write("print the wrong condition");
+
+//  =============================================================================       
+// can you use multiple statement cases for a single block of code in a swotch statement provide an example
+// var grade=2;
+// switch(grade)
+// {
+//     case 1:
+//     case'y':
+//     case'yes':
+//     document.write("continue");
+//     break;
+//     case 2:
+//     case 5:
+//     case 6:
+//     document.write("default");
+// break;
+//     case"khalid":
+//     case"sachin":
+//     case"karan":
+//     document.write("my name is khalid khan");
+//   break;
+//     default:
+//         document.write("invalid operation");
+// }
+// var a= parseInt(prompt("enter your number"));
+// var b= String(prompt("enter your operation"));
+// var c=parseInt(prompt("enter your number"));
+// switch(b)
+// {
+//     case"+":
+//     document.write(a+c);
+//     break;
+//     case"/":
+//     document.write(a+c);
+//     break;
+//     case"*":
+//     document.write(a+c);
+//     break;
+//     case"-":
+//     document.write(a+c);
+//     break;
+// }
+// # Outer loop 1 se 3 tak chalega
+// Outer loop 1 se 10 tak chalega
+for (let i = 1; i <= 10; i++) {
+    // Inner loop 1 se 5 tak chalega
+    for (let j = 1; j <= 5; j++) {
+        document.write(`${i+"<br>"}`)
+    }
+}
+
+
+// ============================================
+// how to handle that fall through cases in javas script
+// let day = 1;
+
+// switch (day) {
+//   case 1:
+//     console.log('Monday');
+//     // Fall-through
+//   case 2:
+//     console.log('Tuesday');
+//     // Fall-through
+//   case 3:
+//     console.log('Wednesday');
+//     break;
+//   case 4:
+//     console.log('Thursday');
+//     break;
+//   default:
+//     console.log('Invalid day');
+// }
+
+
+// =============================================================
+// how practice of if else of statement
+// let score = 85;
+
+// if (score >= 90) {
+//   console.log('Grade: A');
+// } else if (score >= 80) {
+//   console.log('Grade: B');
+// } else if (score >= 70) {
+//   console.log('Grade: C');
+// } else if (score >= 60) {
+//   console.log('Grade: D');
+// } else {
+//   console.log('Grade: F');
+// }
+
+// what is ternary operater
+// var age=18;
+//  var b=age>=18?"age is right":"age is not right";
+//  document.write(b);
+// ================================================
+//  check the variale postitve and negaigtve
+//   var number=0;
+//   if(number>0)
+//   {
+//     document.write("number is positive");
+//   }
+//   else if(number<0)
+//   {
+//     document.write("number is negitive");
+//   }
+//   else{
+//     document.write("number is zero");
+//   }
+
+//  how do combine multiple if else statement in using opeater
+
+// let ages = 25;
+// let hasLicense = true;
+
+// if (ages >= 18 && hasLicense) {
+//   console.log('You are allowed to drive.');
+// } else {
+//   console.log('You are not allowed to drive.');
+// }
+
+//    
+// =============================================================
+// object in javascript how to creat and delete
+// let person = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 30,
+//   greet:function() {
+//     console.log('Hello, my name is ' + this.firstName + 'my collage is ' + student.collage);
+//   }
+// };
+    // there are two menhod create an object in javascript
+    // var person={
+    //     first:'khalid',
+    //     second:"khan",
+    //     getname:function()
+    //     {
+    //         document.write("my name is"+ this.first+"collage name"+ this.second);
+    //     }
+    // }
+    // console.log(person.getname());
+    // var b={
+    //     collage:"ciitm",
+    //     city:"jaipur",
+    // };
+    // second method is decleared of object
+    //   var c=new Object();
+    //   c.first="khalid",
+    //   c.last="khan",
+    //   c.age="32";
+    //    c.greet=function()
+    //   {
+    //     console.log("my name is"+ this.first+" "+this.last);
+    //   }
+    //   console.log(c.greet());
+
+    //   var d=new Object();
+    //   d.collage="ciitm",
+    //   d.city="jaipur";
+    //   ================================================
+    // how to use method an inside object
+    // var student={
+    //     first:"khalid",
+    //     last:"khan",
+    //     age:"20",
+    //     getnam:function()
+    //     {
+    //         // return this.first.toUpperCase();
+    //         console.log(`${this.last.toUpperCase()}`);
+    //       
+    //     }
+    // }
+    // console.log(student.getnam())
+    // ===============================================================
+    // what is object constructure
+    //   function Student(first,last,age,cls)
+    //   {
+    //     this.firstname=first;
+    //     this.lastname=last;
+    //     this.age=age;
+    //     this.class=cls;
+    //   }
+    //   Student.prototype.nationityly="india";
+    //   var b= new Student("khalid","khan",20,"5th");
+    //   console.log(b);
+    //   var c= new Student("tarif","khan",21,"19th");
+    //    ============================================================
+    // how to saprate two object with togherter
+    // let person={
+    //     firstname:'khalid',
+    //     lastname:'khan',
+    //    getname:function(){
+    //         console.log("hello i am "+ person.firstname+"have a "+ car.brand+"car");
+    //     }
+    // };
+    // let car={
+    //  brand:"tata",
+    //     model:'safari',
+    // }
+    // console.log(person.getname());
+    // person.getname()
+
+
+
+
+    
+    // person.age=32;
+    // delete person.second;   //it is uded delete an property form an object
+    // console.log(person["first"]);
+    // console.log(person.first);
+   
+//  and and than second method in javascript
+// let person = new Object();
+// person.firstName = 'John';
+// person.lastName = 'Doe';
+// person.age = 30;
+// person.greet = function() {
+//   console.log('Hello, my name is ' + this.firstName + ' ' + this.lastName);
+// };
+
+//  constructer function in javscript
+// ==============================================================
+//  let book2=new Array("khalid","tarif","aleem","haseen");
+//  document.write(book2[2]);
+//   book2[0]="ali";
+// for(let i=1;i<=book2.length;i++)
+// {
+//     document.write(book2[i]);
+// }
+
+// let arr = new Array(10, 20, 30, 40, 50);
+//   arr[3]="khalid";
+// // Accessing a single value
+// document.write(arr); // Outputs: 10
+
+// Looping through the array and accessing values
+// for(let i = 0; i < arr.length; i++) {
+//     document.write(arr[i]);
+// }
+
+        // ====================================================================================
+
+    // for(let i=10;i>0;i--)
+    // { 
+    //     // if(i%2===0)
+    // // {
+    //     document.write(i+"<br>\n")
+    // // }   
+    // }
+    // var b=Math.sqrt(2);
+    // document.write(b);
+    // var c="khalid";
+    // var d=c.repeat(c);
+    // document.write(d);
+    </script>
+</body>
+</html>

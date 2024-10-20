@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ecma it is version of javascript it is published icma internaton</h1>
+    <input type="radio" name="ni" value="female">male
+    <input type="radio" name="ni" value="fmale">female
+    <button id="btnn"> click here dear</button>
+    
+    <script>
+        var paraent=document.getElementById("btnn");
+        paraent.addEventListener("click",function()
+    {
+        // paraent.style.color="red";
+        paraent.style.background="yellow";
+    });
+        // var  count=1;
+        //  var count;
+        // console.log(count);
+        // const d="that is constent";
+        // //  d=3;
+        // // console.log(d);
+        // // what is default parameter
+        // function abc(msg="default paramerer",khalid="khan")
+        // {
+        //     console.log(msg,khalid);
+        // }
+        // abc(); //if we not assing value inside in function it decleard default so remove this type of problem we used default function
+        //   what is restof parameters define tirple dotss allow accept indefinite argument
+        //  function fun(a,b)
+        //  {                   so remove this type of problem we used rest of parameters
+        //     console.log(a+b);
+        //  }
+        //  fun(4,5,7,7,8);
+        // function fun(...arg)
+        // {
+        //     let res=0;
+        //     for(i=0;i<arg.length;i++)
+        // {
+        //     res+=arg[i];
+        // }
+        //    console.log(res);
+        // }
+
+        // fun(5,5,3,4 );
+        // spread operator allow us to spread array element it will define tirple dots and its allow us sprad array element
+        // var book1=[1,2,3];
+        // var book2=[...book1,5,6,4];
+        // var book3=[...book1,...book2];
+        // console.log(book3);
+        // console.log(book2);
+        // var book3=[...book1,...book2];
+        // console.log(book3  );
+        // for of loop through when used we want to access that array than string value one by one such as
+        // var forof=[10,20,30,40];
+        // for(let x of forof)
+        // {
+        //     console.log(x);
+        // }
+
+
+        // var b=[10,20,30,40,50];
+
+        //      b[1];
+        //      document.write(b);
+        // for(let y of b)
+        // {
+        //     console.log(y);s
+        // }
+         
+            //  b.forEach(function fun(name,index)
+            // {
+            //     document.write(name+"<br>",index);
+            // });
+        // =================================
+        //  what is descturcturing array we can access everyone value of array through variable using descturcturng 
+        // var arr=["one","two","three","k",["indian","pakistan",""]];
+        // let[one,two,three,[india,pak],ali]=arr;
+        // console.log(ali);
+
+        // function abc()
+        // {
+        //     return["advanced",800];
+          
+
+        // }
+        // let[name,price]=abc();
+        // console.log(name);
+        //  var abc=[1,2,4];
+        //  var d=[3,4,5];
+        //  var f=abc.concat(d);
+        //  let m=f.join("*");
+        //  console.log(m);
+
+        //  var book=["book1","book2","book3","book4"];
+        //  var book1=["book1","book2","book3","book4"];
+     
+        //  console.log(f);
+
+        // function fun(...arg)
+        // {
+        //     let res=0;
+        //     for(i=0;i<arg.length;i++)
+        // {
+        //     res+=arg[i];
+        // }
+        //    console.log(res);
+        // }
+        //     fun(2,3,5,6,4);
+            // console.log(Array.isArray(abc));
+            // console.log(Array.from(abc));
+            // var nes=[1,2,3,["khalid","khan"],["one","two","three"]];
+            // var update_array=nes.flat();
+            // console.log(update_array);
+
+        // ==============================================
+        // template literal
+        // let bactik=` my name is khalid khan i am from bharatpur but
+        // currently living in jaupur in rajasasthan`;
+        // console.log(bactik);
+        //  var kh="khalid";
+        //  console.log("my name is ",kh +".");
+        //  console.log(`my name is kh${kh}.=good morning-`);
+
+        //  default parameteres
+        // function abc(a=3,b=8)
+        // {
+        //     document.write(a,b);
+        // }
+        // abc();
+        // what is rest of parameters
+        // function fun(...number)
+        // {
+        //     var res=0;
+        //     for(i=0;i<number.length;i++)
+        // {
+        //   res+=number[i];
+        // }
+        // document.write(res);
+        // }
+        // fun(5,7,4,5,5);
+        // what is rest operater it is used to bind to array it is cofy one existiong array to another array
+        // var book=["khalid","tarif","aakil"];
+        // var book2=[6,7,8,];
+        // var book3=[...book,...book2];
+        // document.write(book3);
+
+            //  array in javascript 
+        //     var book=[10,20,30,40,50];
+        //    // this method is define of arrauy in javascript in a good menner
+        //     // book.unshift("khalid khan")
+        //     // book.push("last added");
+        //     book.pop();
+        //     book.shift();
+        //     console.log(book);
+        //     // console.log(Array.isArray(book)); 
+        //     book.includes(10);
+        //     // book.splice(2,1);// it is remove that element anyone position
+        //      var banana=new Array("one","two","three","four","five","six");
+        //      console.log(banana[3]);  
+
+            //    what is array destructing we can access everyone variable of object using variable name;
+            var book={
+                name:"khalid",
+                last:"khan",
+                education:{
+                    pub_name:"khalid khan lai",
+                    year:2024,
+                }
+            };
+               let{names :title,last,pap="default value",education:{pub_name:pub}}=book;
+               console.log(pap);
+    
+// ======================================================================
+// what is arrow function in javascript why we  used this function 
+// arrow function is a sort hand way write of function sorty we can can access that value
+   function double(a)
+   {
+    return 2*a;
+   }
+ console.log(double(2));
+ var arrow=a=>2*a;
+ console.log(arrow(3));
+//  how to generate rendom number in 
+var roandom=()=>{
+  return  Math.random();
+}
+console.log(roandom());
+   var arroe=(a,b)=>console.log(a,b);
+   
+   arroe("khalid","khansss");
+//    arrow function
+// let abcA=(a,b)=>(a+b); 
+
+// abcA(3,3);
+// console.log(abcA(2,2));
+// document.addEventListener("click",function()
+// {
+//     console.log("document was clicked");
+// });
+// arrow function through this work
+//  
+// sort way this is arrow
+// document.addEventListener("click",()=>console.log("document was clicked"));
+// ==============================================================================
+var person={
+  first:"khalid khan",
+  second:"i am form bharatpur",
+  subject:["math","scirn"],
+  education:{
+    class:8,
+    age:43,
+  getname:function()
+  {
+    return this.first.toUpperCase()
+  }
+}
+};
+console.log(person.subject[1]);
+// person.nationa="india",
+// // console.log(person);
+// let{first,second}=person;
+// console.log(first);
+
+
+// let person =new Object();
+// person.name="it is second method of create object",
+// person.age="45"
+// person.nation="india"
+
+ 
+// console.log(person);
+// var person= new Object();
+// person.first='khalid'
+// person.second="khalid khan";
+// document.write("i am "+ person.first+"khan mewati aale"+ sir.myname+"bharatpur");
+
+// console.log(person.getname());
+
+// how to access property using get function
+// var person={
+//     first:"khalidn",
+//     second:"khan",
+//     get getname()
+//     {
+//         return this.first.toUpperCase()
+//     }
+// }
+// console.log(person.getname);
+// how to used set function
+// var person={
+//     first:"khalid",
+//     second:"khan",
+//     set setname(n)
+//     {
+//         this.first=n.toUpperCase()
+//     }
+// };
+// person.setname="khalid";
+// console.log(person);
+// var student={
+//     first:"khalid",
+//     lase:"khan",
+//     age:34,
+//     class:34,
+// }
+// var students={
+//     first:"khalid khan",
+//     lase:"khan ali",
+//     age:34,
+//     class:34,
+// }
+// var student1={
+//     firstname:"khanlid",
+//     lastname:"khan",
+//     age:25,
+//     class:5,
+// }
+    </script>
+
+</body>
+</html>

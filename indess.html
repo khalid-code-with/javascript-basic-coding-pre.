@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your name" id="inputfield">
+    <p id="output"></p>
+    
+    <script>
+        var parent = document.getElementById("inputfield");
+        var output = document.getElementById("output");
+
+        parent.addEventListener("focus", function() {
+            parent.style.background = "red";
+            parent.style.color = "yellow";
+            parent.style.textTransform = "capitalize";
+        });
+
+        parent.addEventListener("blur", function() {
+            parent.style.background = "white";
+            parent.style.color = "blue";
+            parent.style.textTransform = "lowercase";
+
+        });
+
+        parent.addEventListener("input", function() {
+            output.textContent = "Preview here: " + parent.value;
+        });
+    </script>
+</body>
+</html>

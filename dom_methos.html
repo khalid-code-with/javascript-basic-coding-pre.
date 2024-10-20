@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul>
+        <l1 class="one">list 1 </l1>
+        <l1 id="second">list 2 my name is khalid khan</l1>
+        <l1 class="one">list 3</l1>
+    </ul>
+     how to select multiple html tag using javascript -->
+     <!-- <h2>heading 1</h2>
+     <div class="div1">
+     <p>paragraph</p>
+     <h2>heading 2</h2>
+     <p>paragraph</p>
+     <h2>heading 3</h2>
+     <p>paragraph</p>
+     </div>-->
+     <!-- <h2 class="intro">heading 3</h2>
+     <div class="div1">
+        <p class="intro">paragraph 1</p>
+
+        <p> paragraph 2
+        <h1>heading</h1>
+        <p class="intro"></p>
+        <h2>headig 2</h2>
+     </div> -->
+     <!-- <ul id="intor">
+        <l1>list 1</l1>
+        <l1>list 2</l1>
+        <l1>list 3</l1>
+     </ul>
+     <ul>
+        <l1>list 1</l1>
+        <l1>list 2</l1>
+        <l1>list 3</l1>
+     </ul> -->
+     <!-- <div id="intro">
+      <p>this is a p tag</p>
+     </div> -->
+     <!-- <ul id="list">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li> list 3</li>
+      <li> list 4</li>
+   </ul> -->
+   <!-- <ul id="menu">
+      <li>Home</li>
+      <li>Service</li>
+      <li>About</li>
+      <li>Contact</li>
+   </ul> -->
+   ====================================
+   <!-- <div id="intro">  insert the newelement inhtml page some posotions 
+      <p>this is a p tag</p>
+   </div> -->
+   ======================================
+   <!-- how to change attribute using javascript in html page -->
+    <!-- <button id="btn" name="form1">send</button>  //add a attribuate getalue attribute set value attribute -->
+     =========================
+     <!-- style apply  on html page using javascript -->
+     ==========================================
+   <!-- <button id="btn"ondblclick="b()">click here</button> -->
+   <style>
+      body{
+         height: 2000px;
+      }
+   </style>
+   <form action="">
+      <input type="text"id="input_field">
+   </form>
+<script> 
+// =====================================================
+      // keyboard event in javascript
+//       window.addEventListener('keyup',chekkey);
+    
+//       function chekkey(event) 
+//       {
+// console.log(event.key);
+//       }
+
+      // =====================================================================
+      // scroll event in provide scrolling
+   // window.addEventListener("scroll",fu);
+   // function fu()
+   // { 
+   //    console.log("contunue scrolling......")
+   // }
+   // ========================================================
+   // how to detected scrolling up or down
+//    window.addEventListener("wheel",function(event)
+// {
+//    if(event.deltaY<0)
+// {
+//    console.log("scrolling up");
+// }
+// else if(event.deltaX>0)
+// {
+//    console.log("scrolling down");
+// }
+// });
+// ======================================================
+// how to findout how much page scrolling
+// window.addEventListener("scroll",function()
+// {
+//    if(window.pageyOffset>150)
+// {
+//    document.body.style.background="green";
+// }
+// else{
+//    document.body.style.background="red";
+// }  
+// });
+// ========================================================================
+// what is input event used for changed some input field
+// let x=document.getElementById("input_field");
+// x.addEventListener("focus",myfunction);
+// x.addEventListener("blur",my_fuction);
+// x.addEventListener("change",function()
+// {
+//    console.log(this.value);
+// });
+// function myfunction()
+// {
+//    x.style.background="green";
+// };
+// function my_fuction()
+// {
+//    x.style.background="white";
+// }
+// ====================================================
+    // what are mouae event it entract with html web document -->
+//  <div id="box" oncontextmenu="fun()">
+   //  <div id="box" ondblclick="fun()"></div> 
+//     <div id="box" onmousedown="fun()"></div> 
+//     <div id="box" onmouseup="fun()"></div> 
+//     <div id="box" onmouseover="fun()"></div> 
+//     function fun()
+//     {
+//       alert("click here"); 
+//     }
+ // ==================================================== -->
+
+
+
+// load a imge using javascript in html page
+// ================================================================
+// var imges=document.getElementById("img");
+// window.addEventListener('DOMContentLoaded',function()
+// {
+//    console.log("dom tree create");
+// });
+// // images.addEventListener('load',function() we can directlu imges usignload event
+// window.addEventListener('load',function()
+// {
+//    console.log("fully loaded");
+// })
+// =====================================================================
+// how to load html image using javascript
+
+// =====================================================================
+//   remove addEventListener in java script and how to add two event at a time
+   // var btn=document.getElementById("btn");
+   // function click1()
+   // {
+   //    console.log("click1 activated");
+   // }
+   // function click2()
+   // {
+   //    console.log("click2 activated");
+   // }
+   // btn.addEventListener('click',click1);
+   // btn.addEventListener('click',click2);
+   // btn.removeEventListener('click',click2); 
+// =======================================================================
+// how to check in which class apply in html element
+// var clas=document.getElementById("box");
+// console.log(clas.classList);
+// clas.classList.add("dim");
+// clas.classList.remove("dim","color");
+// var check_class=clas.classList.contains("dim",);
+// console.log(check_class); 
+// ==================================================
+// how to check height and width of css throught java script
+// var parent=document.getElementById("box");
+// let width=parent.offsetWidth;
+// let height=parent.offsetHeight;
+// console.log(width,height);
+0
+// ==================================================
+   //   how to chck the css using apply on html
+
+// var btn=document.getElementById("parent");
+// var css=getComputedStyle(btn);
+// console.log(css.color);
+// ========================================
+// btn.style.cssText="background-color:red;font-size:40px";
+// btn.setAttribute('style','color:green;font-size:10vh');
+// btn.style.color="yellow";  
+// btn.style.cssText +="background:red;font-size:20px";
+      // btn.setAttribute("name","form1");
+      // var value=btn.hasAttribute("name");
+      // console.log(value);
+     // ==================================
+      // var clon=btn.cloneNode(btn);
+      // console.log(clon);
+      // document.body.appendChild(clon); 
+      // parent.setAttribute("name","form1");
+   // var button=document.getElementById(btn); 
+   // btn.setAttribute("name","form1"); 
+   // let val=btn.getAttribute("name");
+   // // let value=btn.removeAttribute("name"); 
+   // console.log(val);
+   // let value=btn.hasAttribute("name");
+   // console.log(value);
+   // // what is insert adjacent html
+   // var adjacent=document.getElementById("intro");
+   // var b="<h1>this is a heading tag</h1>";
+   // adjacent.insertAdjacentHTML("afterbegin",b);
+   //  Replace Element in javascript we can replace a element a value form html elemetn add new item 
+
+   // var parent=document.getElementById("menu");
+   // var item=document.createElement("li");
+   // item.textContent="product";
+   // var pos=parent.firstElementChild.nextElementSibling;
+   // parent.replaceChild(item,pos);
+   // what is clone node in javascript it is copy to another copy example start here
+      //   var parent=document.getElementById("menu");
+      //   var clone=parent.cloneNode(parent);
+      //   document.body.appendChild(clone);
+      //   console.log(clone);
+   // var parent=document.getElementById("menu");
+   // var item=document.createElement("li");
+   // item.textContent="product";
+   //  let replac=parent.firstElementChild.nextElementSibling;
+   //  parent.replaceChild(item,replac);
+   // // clone Element in javascript
+// var menu=document.getElementById("menu");
+ 
+//   var clone=menu.cloneNode(menu);
+//   document.body.appendChild(clone);
+// //   console.log(clone);
+
+//   var peren=document.getElementById("paren");
+//   var create=document.createElement("li");
+//   create.textContent="4 list";
+// //   paren.appendChild(create);
+// var pos=paren.firstElementChild;
+// // paren.insertBefore(create,pos);
+
+// // paren.removeChild(pos);
+// document.body.removeChild(paren);
+//   var paren=document.getElementById("paren");
+//   var create=document.createElement("li");
+//   create.textContent="this is secnd list";
+// //   paren.appendChild(create);
+//   var pos=paren.firstElementChild.nextElementSibling;
+// //   paren.insertBefore(create,pos);
+// //   paren.removeChild(pos);
+// document.body.removeChild(paren);
+  
+  
+   // var list1=document.getElementById("list");
+   // var li=document.createElement("li");
+   // li.textContent="list 5";
+   // // list1.appendChild(li);
+   // var pos=list1.firstElementChild.nextElementSibling;
+   // list1.insertBefore(li,pos);
+
+
+   // var pos=list1.firstElementChild.nextElementSibling;
+   // list1.insertBefore(li,pos);
+//  var b=document.getElementById("second");
+//  console.log(b.innerHTML);
+// b.innerHTML="<i>this is italic tag</p>";
+// target useign class metosd
+//  var c=document.getElementsByClassName("one");
+// //  console.log(c);
+//    for( let i=0;i<=c.length;i++)
+//    {
+//       c[i].innerHTML="<i>hello khan</i>";
+//    }
+//
+// how to select multiple tag using javascript
+//   var div1=document.getElementById("div1");
+//   var tag_select=div1.getElementsByTagName("h2");
+
+//   for(let i=0;i<=tag_select.length;i++)
+//   {
+//      tag_select[i].innerHTML="hello"; 
+//   }
+//    var lem=document.querySelector("p.intro");
+//    lem.innerHTML="khalid";
+//    console.log(lem);   //it is select only one
+//    var lem=document.querySelectorAll("p.intro");
+//    for(let i=0;i<lem.length;i++)
+//    {
+//     lem[i].innerHTML="khlaid khanbhai";
+//    }
+//    console.log(lem); 
+// var lem=document.getElementById("intor");
+// // var parent=lem.firstElementChild;
+// var parent=lem.nextElementSibling;
+// console.log(parent);
+// what is inner html
+   // let elm=document.getElementById("intro");
+   // var h1=document.createElement("h1");
+   // // how to set id
+   // h1.id="try";
+   // h1.className="intro";
+   // let text=document.createTextNode("this is h1 tag");
+   // h1.appendChild(text); 
+   // elm.appendChild(h1);
+   // // let content=elm.innerHTML="<h1>this is khalid boss</h1>";
+   // // console.log(content); 
+   // h1.textContent="conten added";  // it is property add the content
+
+
+
+   // var list1=document.getElementById("list");
+   // var li=document.createElement("li");
+   // li.textContent="list 5";
+   // // list1.appendChild(li);
+   // var pos=list1.firstElementChild.nextElementSibling;
+   // list1.insertBefore(li,pos);
+
+
+   // how to add element insise body
+//    let parent=document.body;
+//    let elm=document.createElement("h2");
+//    elm.textContent="it is add body ";
+// let list=document.getElementById("list");
+// parent.insertBefore(elm,list);
+// var paren=document.getElementById("paren");
+// let elm=paren.firstElementChild.nextElementSibling;
+// //  paren.removeChild(elm);
+// // how to remove all page 
+// document.body.removeChild(paren);
+
+</script>
+</body>
+</html> 
